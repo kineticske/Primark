@@ -9,37 +9,19 @@
     background-color: white;
     padding: 15px;
     margin-top: 5%;
+    margin-bottom: 5%;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px;
     display: flexbox;
-
+    z-index: -1;
 }
 
 
 
 body {
-    background: linear-gradient(90deg, rgb(148, 145, 145), #1395ee, #05c0ca, #64d9a6, #7e3fe6);
-    background-size: 800% 800%;
-
-    -webkit-animation: ColorDinamico 30s ease infinite;
-    -moz-animation: ColorDinamico 30s ease infinite;
-    animation: ColorDinamico 30s ease infinite;
-}
-
-@-webkit-keyframes ColorDinamico {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes ColorDinamico {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes ColorDinamico {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    padding-top: 5%;
+    z-index: -1;
+    background-color: #e4ebe7;
 }
 
 .logo{
@@ -47,3 +29,32 @@ body {
     height:40px;
 
 }
+
+.navbar.navbar-expand-lg.navbar-light.bg-light{
+    box-shadow: 0px 0px 10px black;
+    position:fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0px;
+}
+
+.navbar-nav.ml-auto{
+
+    padding-left:380px;
+}
+
+
+footer{
+
+    margin-bottom: 0px;
+}
+
+.fab.fa-instagram{
+    padding-right: 5px;
+}
+
+.fab.fa-facebook-f{
+
+    padding-right: 5px;
+}
+
