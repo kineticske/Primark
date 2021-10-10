@@ -37,6 +37,6 @@ def validarUsuario():
             if(users['correo']==correo and users['contraseña']==contraseña):
                 nombre=users['primer nombre']
                 apellido=users['primer apellido']
-                return render_template('User.html',nombre=nombre , apellido=apellido)
+                return render_template('user.html',nombre=nombre , apellido=apellido)
             error=True
             return render_template('login.html',error=error)

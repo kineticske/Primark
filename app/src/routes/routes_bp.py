@@ -1,7 +1,7 @@
 from flask import Blueprint
 from controllers.primark_controller import login, index, signin, favoritos, productos, compras, contactenos, evaluar, validarUsuario
 
-routes_bp = Blueprint('routes_bp', __name__)
+routes_bp = Blueprint('', __name__)
 
 routes_bp.route('/', methods=['GET'])(index)
 routes_bp.route('/login', methods=['GET'])(login)
