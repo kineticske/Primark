@@ -55,5 +55,8 @@ _Tools_
 * [SQLAlchemy](www.sqlalchemy.org) - SQL ORM
 
 ## Authors ✒️
-* Javier Felipe Castañeda - [jfcc3101](https://github.com/jfcc3101)
-* María Camila Guerrero Giraldo - [mcguegi](https://github.com/mcguegi/)
+* Karina Esther Arjona Riaño - [Kineticske](https://github.com/Kineticske)
+* Pedro Blanco Villamizar - [PedrobVuninorte](https://github.com/PedrobVuninorte)
+* Benjamín Paba González - [benjamin-25](https://github.com/benjamin-25)
+* Adriana Cristina Pérez Urango - [adrixcpu](https://github.com/adrixcpu)
+* Miguel Ángel Vega Alonso - [Miavega](https://github.com/Miavega/)
