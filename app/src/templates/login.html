@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+
+{% block contenido %}
+
+{% if error %}
+    <div class="alert alert-danger d-flex align-items-center alert-dismissible fade show" role="alert">
+        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+        <div>
+            Error, Correo electronico o Contraseña Incorrecta favor verifique.
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <form class="formulario" action="/validar_usuario" method="POST">
+                
+        <label for="Correo">Correo Electronico</label>
+        <input class="form-control" id="Correo" type="email" class="form-control" name="correo" required>
+        <br>
+        <label for="Contraseña">Contraseña</label>
+        <input class="form-control" id="Contraseña" type="password" class="form-control" name="contraseña" required>
+        <br>
+        <button class="btn btn-primary" type="submit">Enviar</button>
+    </form>
+
+{% else %}
+
+    <form class="formulario" action="/validar_usuario" method="POST">
+        
+        <label for="Correo">Correo Electronico</label>
+        <input class="form-control" id="Correo" type="email" class="form-control" name="correo" required>
+        <br>
+        <label for="Contraseña">Contraseña</label>
+        <input class="form-control" id="Contraseña" type="password" class="form-control" name="contraseña" required>
+        <br>
+        <button class="btn btn-primary" type="submit">Enviar</button>
+    </form>
+    
+{% endif %}
+
+{% endblock %}
