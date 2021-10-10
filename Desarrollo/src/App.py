@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, redirect, request
 from flask import render_template
 from flask import url_for
 from flask import jsonify
@@ -66,7 +66,8 @@ def validarUsuario():
             if(users['correo']==correo and users['contraseña']==contraseña):
                 nombre=users['primer nombre']
                 apellido=users['primer apellido']
-                return render_template('User.html',nombre=nombre , apellido=apellido)
+                return render_template('index.html',nombre=nombre , apellido=apellido)
+                
             error=True
             return render_template('login.html',error=error)
 
