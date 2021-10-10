@@ -20,7 +20,7 @@ _Activate the venv Linux_
 source venv/bin/activate
 ```
 
-_Activate the venv Windows
+_Activate the venv Windows_
 ```
 cd venv/Scripts/activate.bat
 ```
