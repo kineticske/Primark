@@ -14,10 +14,15 @@ _Create virtual environment with your preferred tool. We suggest venv_
 python -m venv venv
 ```
 
-_Activate the venv_
+_Activate the venv Linux_
 
 ```
 source venv/bin/activate
+```
+
+_Activate the venv Windows
+```
+cd venv/Scripts/activate.bat
 ```
 
 _Install all the requeriments_
@@ -38,7 +43,7 @@ flask run
 _To run the tests, use the command:_
 
 ```
-pytest
+pytest (not implemented yet)
 ```
 
 ## Built with ❤️

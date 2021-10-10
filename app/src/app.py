@@ -11,7 +11,6 @@ def create_app():
 
     # register each active blueprint
     for url, blueprint in ACTIVE_ENDPOINTS:
-        print(blueprint._blueprints)
         app.register_blueprint(blueprint, url_prefix=url)
 
     return app
