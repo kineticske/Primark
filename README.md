@@ -22,7 +22,11 @@ source venv/bin/activate
 
 _Activate the venv Windows_
 ```
-cd venv/Scripts/activate.bat
+cd venv/Scripts
+```
+
+```
+activate.bat
 ```
 
 _Install all the requeriments_
