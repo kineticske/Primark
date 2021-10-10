@@ -1,6 +1,9 @@
-from flask import Flask
+from flask import Flask, request
 from flask import render_template
 from flask import url_for
+from flask import jsonify
+from static.py.Usuarios import usuarios
+
 
 
 app= Flask(__name__)
@@ -15,6 +18,7 @@ def index():
 @app.route('/login')
 
 def login():
+    
     return render_template('Login.html')
 
 @app.route('/signin')
@@ -47,6 +51,24 @@ def contactenos():
 
 def evaluar():
     return render_template('Evaluar.html')
+
+@app.route('/validarUsuario', methods=['POST'])
+
+def validarUsuario():
+
+    if (request.method=='POST'):
+        correo=request.form['correo']
+        contraseña=request.form['contraseña']
+        users=None
+        nombre=None
+        error=False
+        for users in usuarios:
+            if(users['correo']==correo and users['contraseña']==contraseña):
+                nombre=users['primer nombre']
+                apellido=users['primer apellido']
+                return render_template('User.html',nombre=nombre , apellido=apellido)
+            error=True
+            return render_template('login.html',error=error)
 
 
 
