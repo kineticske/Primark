@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block contenido %}
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static',filename='./css/normalize.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='./css/style.css')}}">
+</head>
+<body>
+
+    <div class="contenedorProductos" id="contenedorProductos">
+        <article class="product-card">
+            <div>
+                <img src="" alt="">
+            </div>
+            <div >
+                <p class="precio" id="precio">
+                </p>
+                <p class="disponibilidad" id="disponibilidad">
+                </p>
+            </div>
+        </article>
+    </div>
+
+    <script src="{{url_for('static',filename='./js/scripts.js')}}"></script>
+</body>
+
+{% endblock %}
